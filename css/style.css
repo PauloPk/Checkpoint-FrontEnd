@@ -221,6 +221,12 @@ footer {
         height: 100%;
  }
 
+ ul {
+    font-size: 1.3rem;
+    flex-direction: column;
+    gap: 5px;
+ }
+
  .brev {
         background: rgb(193,241,245);
         background: linear-gradient(0deg, rgba(193,241,245,0.5074404761904762) 0%, rgba(242,246,246,0.6530987394957983) 100%);
