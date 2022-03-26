@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+/*header*/
+header {
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(124,197,210,1) 35%, rgba(78,143,191,1) 100%);
+    padding: 1px 10px;
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 5px;  
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*sobre a cidade*/
+
+.sect1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/turismo-card-um.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+.titleBreve {
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;    
+}
+
+.brev {
+    background: rgb(193,241,245);
+    background: linear-gradient(0deg, rgba(193,241,245,0.5074404761904762) 0%, rgba(242,246,246,0.4150035014005602) 100%);
+    border: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*cards*/
+main h2 {
+    font-size: 2rem;   
+}
+
+section, footer {
+    padding: 10px;
+}
+
+h2 {
+    align-items: center;
+    text-align: center;
+}
+
+.containerCard {
+    background: rgb(145,218,241);
+    background: radial-gradient(circle, rgba(145,218,241,0.742734593837535) 0%, rgba(46,192,195,0.958420868347339) 100%);
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+
+.card1 {
+    width: 33%;
+    height: 600px;    
+    border-radius: 5%;
+    background-color: #f3f3f3;
+    box-shadow: 0px 16px 15px -9px rgba(0,0,0,0.81); 
+    margin: 1px;
+    
+}
+
+.ticard {
+    font-size: 1.3rem;
+    color: #5e5929;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    border: 2px solid wheat;
+    width: 370px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin: 5px ;
+    
+}
+
+.card1 p{
+    font-size: 0.90rem;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    align-items: baseline;
+    margin:  20px 10px;
+}
+
+.containerCard img {
+    width: 100%;
+    height: 180px;
+    border-radius: 5%;
+}
+
+.card__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+.card__btn a {
+    text-decoration: none;
+    background: rgb(97,193,187);
+    background: linear-gradient(90deg, rgba(97,193,187,1) 0%, rgba(108,178,198,1) 35%, rgba(0,60,96,1) 100%);;
+    color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.video {    
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+       
+}
+
+.sit {
+    border: #006017;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.linkedin{
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+   
+}
+
+.linkedin img {
+    width: 100%;
+}
+
+.git {
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.git img {
+    width: 100%;
+}
+
+
+
+@media ( max-width:1280px) {
+    .card1 {
+        width: 33%;
+    }
+    p {
+        width: 95%;
+    }
+
+}
+
+@media ( max-width:425px) {
+ html {
+        font-size: 14px;
+ } 
+
+ .sect1 {
+        width: 100%;
+        height: 100%;
+ }
+
+ .brev {
+        background: rgb(193,241,245);
+        background: linear-gradient(0deg, rgba(193,241,245,0.5074404761904762) 0%, rgba(242,246,246,0.6530987394957983) 100%);
+        font-size: 0.90rem;
+       
+ }
+ header{
+        flex-direction: column;
+        gap: 10px;
+ }
+
+ .card1 {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     height: 510px;
+ }
+
+ .ticard {
+     font-size: 1.5rem;
+ }
+
+ p {
+     width: 95%;
+     height: 125px;
+ }
+
+}
