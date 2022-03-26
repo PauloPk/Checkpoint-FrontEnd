@@ -199,6 +199,12 @@ footer {
     width: 100%;
 }
 
+.sit a {
+    text-decoration: none;
+    color: black;
+    margin: -15px;
+}
+
 
 
 @media ( max-width:1280px) {
